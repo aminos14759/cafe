@@ -7,6 +7,7 @@ import iceDrinksImg from './assets/ice_drinks.png'
 import hotDrinksImg from './assets/hot_drinks.png'
 import sweetImg from './assets/crepe nutella.png'
 import savoryImg from './assets/pasta.png'
+import sandwichImg from './assets/sandwich.png'
 
 /* ═══════════════════ MENU DATA ═══════════════════ */
 
@@ -328,6 +329,28 @@ const menuSections = [
           { name: "Thon", price: "3,000" },
           { name: "Jambon", price: "3,000" },
           { name: "Fromage", price: "3,000" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Sandwishes & Tacos",
+    subtitle: "Des sandwichs gourmands et généreux",
+    bannerImage: sandwichImg,
+    categories: [
+      {
+        name: "Sandwishes",
+        items: [
+          { name: "Crispy chiken", price: "14,2" },
+          { name: "Grillé chiken", price: "13,9" },
+          { name: "Tunisien", price: "11,9" },
+        ],
+      },
+      {
+        name: "Tacos",
+        items: [
+          { name: "Crispy", price: "15,6" },
+          { name: "Grillé", price: "14,8" },
         ],
       },
     ],
