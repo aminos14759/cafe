@@ -530,7 +530,7 @@ function App() {
       {/* ═══════ FOOTER ═══════ */}
       <footer className="border-t border-stone-200 bg-stone-900 py-10 text-center">
         <Divider />
-        <p className="mt-4 font-serif text-xl text-amber-400">La Sdesseda</p>
+        <p className="mt-4 font-serif text-xl text-amber-400">La desseada</p>
         <p className="mt-2 text-xs tracking-wider text-stone-500">
           © {new Date().getFullYear()} — Tous droits réservés
         </p>
