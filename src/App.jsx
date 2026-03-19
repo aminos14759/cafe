@@ -234,8 +234,8 @@ const menuSections = [
       {
         name: "Tacos",
         items: [
-          { name: "Crispy", price: "15,6" },
-          { name: "Grillé", price: "14,8" },
+          { name: "Crispy", price: "15,600" },
+          { name: "Grillé", price: "14,800" },
         ],
       },
     ],
