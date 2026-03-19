@@ -306,7 +306,7 @@ const menuSections = [
         ],
       },
       {
-        name: "Toasté",
+        name: "Toste",
         items: [
           { name: "Suman Eggs", price: "16,400" },
           { name: "Jambon Cheddar", price: "13,900" },
