@@ -35,7 +35,7 @@ const menuSections = [
       {
         name: "Le Prestige",
         items: [
-          { name: "Le Prestige", desc: "Café, mini jus, crêpe salée, omelette, fromage, tartines, charcuterie, brochette escalope", price: "37,800" },
+          { name: "Le Prestige", desc: "Café, mini jus, crêpe salée, omelette, fromage, tartine jambon , tartine oeuf brouillé,tartine Au fromage , charcuterie, brochette escalope,", price: "37,800" },
         ],
       },
       {
@@ -219,6 +219,28 @@ const menuSections = [
     ],
   },
   {
+    title: "Sandwishes & Tacos",
+    subtitle: "Des sandwichs gourmands et généreux",
+    bannerImage: sandwichImg,
+    categories: [
+      {
+        name: "Sandwishes",
+        items: [
+          { name: "Crispy chiken", price: "14,200" },
+          { name: "Grillé chiken", price: "13,900" },
+          { name: "Tunisien", price: "11,900" },
+        ],
+      },
+      {
+        name: "Tacos",
+        items: [
+          { name: "Crispy", price: "15,6" },
+          { name: "Grillé", price: "14,8" },
+        ],
+      },
+    ],
+  },
+  {
     title: "Sucré & Gourmand",
     subtitle: "Pour les âmes gourmandes",
     bannerImage: sweetImg,
@@ -329,28 +351,6 @@ const menuSections = [
           { name: "Thon", price: "3,000" },
           { name: "Jambon", price: "3,000" },
           { name: "Fromage", price: "3,000" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Sandwishes & Tacos",
-    subtitle: "Des sandwichs gourmands et généreux",
-    bannerImage: sandwichImg,
-    categories: [
-      {
-        name: "Sandwishes",
-        items: [
-          { name: "Crispy chiken", price: "14,2" },
-          { name: "Grillé chiken", price: "13,9" },
-          { name: "Tunisien", price: "11,9" },
-        ],
-      },
-      {
-        name: "Tacos",
-        items: [
-          { name: "Crispy", price: "15,6" },
-          { name: "Grillé", price: "14,8" },
         ],
       },
     ],
