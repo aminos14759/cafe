@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 import cafeImg from './assets/cafe.jpg'
 import breakfastImg from './assets/breakfast.png'
 import coffeeImg from './assets/coffee.png'
@@ -8,6 +9,24 @@ import hotDrinksImg from './assets/hot_drinks.png'
 import sweetImg from './assets/crepe nutella.png'
 import savoryImg from './assets/pasta.png'
 import sandwichImg from './assets/sandwich.png'
+import toastAvocatImg from './assets/trio breakfast/toast avocat.jpg'
+import croissantSaleImg from './assets/trio breakfast/croissant salé.jpg'
+import frenchToastImg from './assets/trio breakfast/french toast.jpg'
+
+const featuredProducts = {
+  "Toast Avocat & Eggs + Bol Granola + Café": {
+    desc: "Toast avocat avec oeufs, bol granola et cafe au choix.",
+    images: [toastAvocatImg],
+  },
+  "Croissant Salé + Café au choix + Mini Jus": {
+    desc: "Croissant sale servi avec cafe au choix et mini jus.",
+    images: [croissantSaleImg],
+  },
+  "French Toast Miel + Café au choix + Mini Jus": {
+    desc: "French toast au miel avec cafe au choix et mini jus.",
+    images: [frenchToastImg],
+  },
+}
 
 /* ═══════════════════ MENU DATA ═══════════════════ */
 
@@ -369,20 +388,22 @@ function Divider() {
 }
 
 /* ═══════ Menu Item Row ═══════ */
-function MenuItem({ name, desc, price }) {
+function MenuItem({ name, desc, price, onClick }) {
   return (
     <li className="group py-2">
-      <div className="flex items-baseline justify-between gap-3">
-        <div className="min-w-0 flex-1">
-          <span className="text-[0.95rem] font-medium text-stone-700 transition-colors duration-200 group-hover:text-amber-700">
-            {name}
+      <button type="button" onClick={onClick} className="w-full cursor-pointer text-left">
+        <div className="flex items-baseline justify-between gap-3">
+          <div className="min-w-0 flex-1">
+            <span className="text-[0.95rem] font-medium text-stone-700 transition-colors duration-200 group-hover:text-amber-700">
+              {name}
+            </span>
+            <span className="mx-2 inline-block flex-1 translate-y-[-3px] border-b border-dotted border-stone-200 align-middle" style={{ minWidth: '20px' }} />
+          </div>
+          <span className="shrink-0 font-serif text-sm font-semibold text-amber-800">
+            {price}
           </span>
-          <span className="mx-2 inline-block flex-1 translate-y-[-3px] border-b border-dotted border-stone-200 align-middle" style={{ minWidth: '20px' }} />
         </div>
-        <span className="shrink-0 font-serif text-sm font-semibold text-amber-800">
-          {price}
-        </span>
-      </div>
+      </button>
       {desc && (
         <p className="mt-0.5 text-xs leading-relaxed text-stone-400 italic">{desc}</p>
       )}
@@ -391,7 +412,7 @@ function MenuItem({ name, desc, price }) {
 }
 
 /* ═══════ Category Card ═══════ */
-function CategoryCard({ name, items, delay }) {
+function CategoryCard({ name, items, delay, sectionTitle, onItemClick }) {
   return (
     <div
       className="animate-fade-in-up rounded-xl border border-stone-100 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-amber-100"
@@ -401,7 +422,11 @@ function CategoryCard({ name, items, delay }) {
       <div className="mb-3 h-0.5 w-10 rounded-full bg-gradient-to-r from-amber-400 to-amber-200" />
       <ul className="divide-y divide-stone-50">
         {items.map((item, i) => (
-          <MenuItem key={i} {...item} />
+          <MenuItem
+            key={i}
+            {...item}
+            onClick={() => onItemClick({ ...item, sectionTitle, categoryName: name })}
+          />
         ))}
       </ul>
     </div>
@@ -446,6 +471,8 @@ function SectionBanner({ title, subtitle, bannerImage, sectionIndex }) {
 /* ═══════════════════ MAIN APP ═══════════════════ */
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState(null)
+
   const scrollToMenu = () => {
     document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })
   }
@@ -520,12 +547,48 @@ function App() {
                   name={cat.name}
                   items={cat.items}
                   delay={cIdx * 100}
+                  sectionTitle={section.title}
+                  onItemClick={setSelectedItem}
                 />
               ))}
             </div>
           </div>
         ))}
       </section>
+
+      {selectedItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+          onClick={() => setSelectedItem(null)}
+        >
+          <div
+            className="w-full max-w-lg rounded-2xl bg-white p-4 shadow-2xl sm:p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="font-serif text-xl font-bold text-stone-800 sm:text-2xl">{selectedItem.name}</h3>
+            <p className="mt-1 text-sm text-stone-500">{selectedItem.sectionTitle} - {selectedItem.categoryName}</p>
+            {featuredProducts[selectedItem.name]?.images?.[0] && (
+              <img
+                src={featuredProducts[selectedItem.name].images[0]}
+                alt={selectedItem.name}
+                className="mt-4 h-52 w-full rounded-xl bg-stone-100 object-contain sm:h-64"
+                loading="lazy"
+              />
+            )}
+            <p className="mt-4 text-sm leading-relaxed text-stone-600 italic">
+              {featuredProducts[selectedItem.name]?.desc || selectedItem.desc || "Description bientôt disponible."}
+            </p>
+            <p className="mt-4 font-serif text-lg font-semibold text-amber-800">{selectedItem.price}</p>
+            <button
+              type="button"
+              onClick={() => setSelectedItem(null)}
+              className="mt-6 w-full rounded-full bg-amber-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-amber-600 sm:w-auto"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ═══════ FOOTER ═══════ */}
       <footer className="border-t border-stone-200 bg-stone-900 py-10 text-center">
