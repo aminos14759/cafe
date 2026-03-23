@@ -8,6 +8,7 @@ import iceDrinksImg from './assets/ice_drinks.png'
 import hotDrinksImg from './assets/hot_drinks.png'
 import sweetImg from './assets/crepe nutella.png'
 import savoryImg from './assets/pasta.png'
+import florentinaImg from './assets/pattes/florentina.jpg'
 import sandwichImg from './assets/sandwich.png'
 import toastAvocatImg from './assets/trio breakfast/toast avocat.jpg'
 import croissantSaleImg from './assets/trio breakfast/croissant salé.jpg'
@@ -25,6 +26,10 @@ const featuredProducts = {
   "French Toast Miel + Café au choix + Mini Jus": {
     desc: "French toast au miel avec cafe au choix et mini jus.",
     images: [frenchToastImg],
+  },
+  "Florentina": {
+    desc: "Pates Florentina (Blanche / Rosee / Rouge).",
+    images: [florentinaImg],
   },
 }
 
