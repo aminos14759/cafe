@@ -57,9 +57,9 @@ const menuSections = [
         ],
       },
       {
-        name: "Le Prestige",
+        name: "Mini brunch 1 personne ",
         items: [
-          { name: "Le Prestige", desc: "Café, mini jus, crêpe salée, omelette, fromage, tartine jambon , tartine oeuf brouillé,tartine Au fromage , charcuterie, brochette escalope,", price: "37,800" },
+          { name: "Mini brunch 1 personne ", desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel", price: "37,800" },
         ],
       },
       {
