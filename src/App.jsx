@@ -51,9 +51,9 @@ const menuSections = [
       {
         name: "Trio Breakfast",
         items: [
-          { name: "Toast Avocat & Eggs + Bol Granola + Café", price: "22,900" },
+          { name: "Toast Avocat & oeufs + Bol Granula + Café", price: "22,900" },
           { name: "Croissant Salé + Café au choix + Mini Jus", price: "12,600" },
-          { name: "French Toast Miel + Café au choix + Mini Jus", price: "14,900" },
+          { name: "pain perdu miel + Café au choix + Mini Jus", price: "14,900" },
         ],
       },
       {
@@ -90,16 +90,7 @@ const menuSections = [
           { name: "Café Turc", price: "6,500" },
         ],
       },
-      {
-        name: "Cafés Capsules",
-        items: [
-          { name: "Expresso", price: "4,900" },
-          { name: "Americano", price: "5,000" },
-          { name: "Cappucin", price: "5,300" },
-          { name: "Crème", price: "6,300" },
-          { name: "Cappuccino", price: "6,500" },
-        ],
-      },
+      
     ],
   },
   {
@@ -116,18 +107,18 @@ const menuSections = [
           { name: "Noisette", price: "9,500" },
           { name: "Nutella", price: "10,500" },
           { name: "Pistache", price: "10,500" },
-          { name: "Speculose", price: "10,500" },
+          { name: "Spéculoos", price: "10,500" },
         ],
       },
       {
-        name: "Ice Latté",
+        name: "Iced Latte",
         items: [
-          { name: "Ice Americano", price: "5,500" },
+          { name: "Iced Americano", price: "5,500" },
           { name: "Spanish", price: "7,500" },
           { name: "Caramel", price: "10,500" },
           { name: "Nutella", price: "10,500" },
           { name: "Pistache", price: "10,500" },
-          { name: "Speculose", price: "10,500" },
+          { name: "Spéculoos", price: "10,500" },
         ],
       },
       {
@@ -150,17 +141,17 @@ const menuSections = [
         name: "Frappuccino",
         items: [
           { name: "Caramel", price: "11,900" },
-          { name: "Speculose", price: "11,900" },
+          { name: "Spéculoos", price: "11,900" },
           { name: "Nutella", price: "12,600" },
-          { name: "Caramel Speculose", price: "13,000" },
-          { name: "Nutella Speculose", price: "13,000" },
+          { name: "Caramel Spéculoos", price: "13,000" },
+          { name: "Nutella Spéculoos", price: "13,000" },
           { name: "Pistache", price: "12,600" },
         ],
       },
       {
-        name: "Smoothie",
+        name: "Smoothies",
         items: [
-          { name: "Strawberry", price: "11,900" },
+          { name: "fraise", price: "11,900" },
           { name: "Mango", price: "12,300" },
           { name: "Ananas", price: "11,900" },
           { name: "Framboise", price: "12,300" },
@@ -172,7 +163,7 @@ const menuSections = [
         name: "Mojito",
         items: [
           { name: "Virgin", price: "9,500" },
-          { name: "Strawberry", price: "11,900" },
+          { name: "Fraise", price: "11,900" },
           { name: "Framboise", price: "11,900" },
           { name: "Blueberry", price: "11,900" },
           { name: "Iced Fruit Passion", price: "12,800" },
@@ -186,7 +177,7 @@ const menuSections = [
           { name: "Pistache", price: "12,300" },
           { name: "Rosy", price: "11,800" },
           { name: "Nutella", price: "13,800" },
-          { name: "Speculose", price: "12,700" },
+          { name: "Spéculoos", price: "12,700" },
         ],
       },
     ],
@@ -210,10 +201,10 @@ const menuSections = [
         name: "Hot Chocolate",
         items: [
           { name: "Simple Chaud", price: "8,000" },
-          { name: "Speculose Chaud", price: "10,500" },
+          { name: "Spéculoos Chaud", price: "10,500" },
           { name: "Nutella Chaud", price: "10,500" },
           { name: "Tiramisu Chaud", price: "11,500" },
-          { name: "Fruit Sec Chaud", price: "14,500" },
+          { name: "Fruits Secs Chaud", price: "14,500" },
           { name: "Marshmallow", price: "11,000" },
         ],
       },
@@ -237,21 +228,21 @@ const menuSections = [
           { name: "Banane", price: "9,500" },
           { name: "Citron aux Amandes", price: "11,500" },
           { name: "Duo Fraise Banane", price: "11,900" },
-          { name: "Power", desc: "Dattes, banane, fruits secs", price: "15,900" },
+          { name: "Power", desc: "Dattes, Banane, fruits secs", price: "15,900" },
         ],
       },
     ],
   },
   {
-    title: "Sandwishes & Tacos",
-    subtitle: "Des sandwichs gourmands et généreux",
+    title: "Sandwiches & Tacos",
+    subtitle: "Des sandwiches gourmands et généreux",
     bannerImage: sandwichImg,
     categories: [
       {
-        name: "Sandwishes",
+        name: "Sandwiches",
         items: [
-          { name: "Crispy chiken", price: "14,200" },
-          { name: "Grillé chiken", price: "13,900" },
+          { name: "Crispy chicken", price: "14,200" },
+          { name: "Grillé chicken", price: "13,900" },
           { name: "Tunisien", price: "11,900" },
         ],
       },
@@ -274,11 +265,11 @@ const menuSections = [
         items: [
           { name: "Nutella", price: "14,800" },
           { name: "Brownie Pocket", price: "15,600" },
-          { name: "Buno Fruit Rouge", price: "16,800" },
+          { name: "Bueno Fruits Rouges", price: "16,800" },
         ],
       },
       {
-        name: "Pancake",
+        name: "Pancakes",
         items: [
           { name: "Nutella", price: "17,800" },
           { name: "Pistache", price: "18,900" },
@@ -292,7 +283,7 @@ const menuSections = [
           { name: "Caramel Banane", price: "16,400" },
           { name: "Lemon Marshmallow", price: "17,200" },
           { name: "Tiramisu", price: "17,600" },
-          { name: "Pistache Fruit Rouge", price: "18,700" },
+          { name: "Pistache Fruits Rouges", price: "18,700" },
         ],
       },
       {
@@ -301,7 +292,7 @@ const menuSections = [
           { name: "Cheesecake au Choix", price: "12,500" },
           { name: "Tiramisu Classique", price: "13,800" },
           { name: "Tiramisu au Choix", price: "15,800" },
-          { name: "San Sébastien", price: "14,800" },
+          { name: "Saint Sébastien", price: "14,800" },
           { name: "Fondant Chocolat", price: "10,900" },
         ],
       },
@@ -330,18 +321,18 @@ const menuSections = [
         ],
       },
       {
-        name: "Toste",
+        name: "Toast",
         items: [
-          { name: "Suman Eggs", price: "16,400" },
+          { name: "Saumon oeufs", price: "16,400" },
           { name: "Jambon Cheddar", price: "13,900" },
-          { name: "Avocat Suman", price: "19,900" },
+          { name: "Avocat Saumon", price: "19,900" },
         ],
       },
       {
         name: "Healthy Corner",
         items: [
           { name: "Rice Bowl", desc: "Riz aux fruits secs, salade, escalope grillé, œuf", price: "18,500" },
-          { name: "Protéine Bowl", desc: "Suman, avocat, salade, œuf, riz", price: "25,900" },
+          { name: "Protéine Bowl", desc: "Saumon, avocat, salade, œuf, riz", price: "25,900" },
         ],
       },
       {
@@ -349,13 +340,13 @@ const menuSections = [
         items: [
           { name: "César", price: "16,900" },
           { name: "Protéine", desc: "Quinoa, haricots rouges, œuf, salade verte", price: "22,400" },
-          { name: "Healthy Avocat", desc: "Avocat, salade verte, graines de chia, fruits secs", price: "17,800" },
+          { name: "Healthy Avocado", desc: "Avocat, salade verte, graines de chia, fruits secs", price: "17,800" },
         ],
       },
       {
         name: "Pâtes",
         items: [
-          { name: "Poutanesca", price: "15,900" },
+          { name: "Putanesca", price: "15,900" },
           { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200" },
           { name: "Pesto alla Genovese", price: "21,800" },
         ],
@@ -365,7 +356,7 @@ const menuSections = [
         items: [
           { name: "Suprême Grillé", price: "19,200" },
           { name: "Panné Sauce Fromage", price: "21,800" },
-          { name: "Blanc Poulet Sauce Champignon", price: "23,400" },
+          { name: "Blanc de Poulet Sauce Champignon", price: "23,400" },
         ],
       },
       {
