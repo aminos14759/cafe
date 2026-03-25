@@ -14,9 +14,7 @@ import toastAvocatImg from './assets/trio breakfast/toast avocat.jpg'
 import croissantSaleImg from './assets/trio breakfast/croissant salé.jpg'
 import frenchToastImg from './assets/trio breakfast/french toast.jpg'
 import miniBrunchImg from './assets/brunch .png'
-import mielBrunchImg from './assets/bruch1personne items/mielbrunch.png'
 import omletteBrunchImg from './assets/bruch1personne items/omlettebrunch.png'
-import saaleeBrunchImg from './assets/bruch1personne items/saaleebrunch.png'
 import sucreeBrunchImg from './assets/bruch1personne items/sucreebrunch.png'
 import toastBrunchImg from './assets/bruch1personne items/toastbrunch.png'
 
@@ -39,7 +37,7 @@ const featuredProducts = {
   },
   "Mini brunch 1 personne ": {
     desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel",
-    images: [miniBrunchImg, mielBrunchImg, omletteBrunchImg, saaleeBrunchImg, sucreeBrunchImg, toastBrunchImg],
+    images: [miniBrunchImg, omletteBrunchImg,  sucreeBrunchImg, toastBrunchImg],
   },
 }
 
