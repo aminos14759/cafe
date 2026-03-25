@@ -13,6 +13,7 @@ import sandwichImg from './assets/sandwich.png'
 import toastAvocatImg from './assets/trio breakfast/toast avocat.jpg'
 import croissantSaleImg from './assets/trio breakfast/croissant salé.jpg'
 import frenchToastImg from './assets/trio breakfast/french toast.jpg'
+import miniBrunchImg from './assets/brunch .png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -30,6 +31,10 @@ const featuredProducts = {
   "Florentina": {
     desc: "Pates Florentina (Blanche / Rosee / Rouge).",
     images: [florentinaImg],
+  },
+  "Mini brunch 1 personne ": {
+    desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel",
+    images: [miniBrunchImg],
   },
 }
 
@@ -558,7 +563,7 @@ function App() {
           onClick={() => setSelectedItem(null)}
         >
           <div
-            className="w-full max-w-lg rounded-2xl bg-white p-4 shadow-2xl sm:p-6"
+            className="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl sm:p-6"
             onClick={(e) => e.stopPropagation()}
           >
             <h3 className="font-serif text-xl font-bold text-stone-800 sm:text-2xl">{selectedItem.name}</h3>
@@ -567,7 +572,7 @@ function App() {
               <img
                 src={featuredProducts[selectedItem.name].images[0]}
                 alt={selectedItem.name}
-                className="mt-4 h-52 w-full rounded-xl bg-stone-100 object-contain sm:h-64"
+                className="mt-4 w-full h-auto rounded-xl object-contain"
                 loading="lazy"
               />
             )}
