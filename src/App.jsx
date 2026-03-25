@@ -14,6 +14,11 @@ import toastAvocatImg from './assets/trio breakfast/toast avocat.jpg'
 import croissantSaleImg from './assets/trio breakfast/croissant salé.jpg'
 import frenchToastImg from './assets/trio breakfast/french toast.jpg'
 import miniBrunchImg from './assets/brunch .png'
+import mielBrunchImg from './assets/bruch1personne items/mielbrunch.png'
+import omletteBrunchImg from './assets/bruch1personne items/omlettebrunch.png'
+import saaleeBrunchImg from './assets/bruch1personne items/saaleebrunch.png'
+import sucreeBrunchImg from './assets/bruch1personne items/sucreebrunch.png'
+import toastBrunchImg from './assets/bruch1personne items/toastbrunch.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -34,7 +39,7 @@ const featuredProducts = {
   },
   "Mini brunch 1 personne ": {
     desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel",
-    images: [miniBrunchImg],
+    images: [miniBrunchImg, mielBrunchImg, omletteBrunchImg, saaleeBrunchImg, sucreeBrunchImg, toastBrunchImg],
   },
 }
 
@@ -568,13 +573,18 @@ function App() {
           >
             <h3 className="font-serif text-xl font-bold text-stone-800 sm:text-2xl">{selectedItem.name}</h3>
             <p className="mt-1 text-sm text-stone-500">{selectedItem.sectionTitle} - {selectedItem.categoryName}</p>
-            {featuredProducts[selectedItem.name]?.images?.[0] && (
-              <img
-                src={featuredProducts[selectedItem.name].images[0]}
-                alt={selectedItem.name}
-                className="mt-4 w-full h-auto rounded-xl object-contain"
-                loading="lazy"
-              />
+            {featuredProducts[selectedItem.name]?.images?.length > 0 && (
+              <div className={`mt-4 grid gap-3 ${featuredProducts[selectedItem.name].images.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                {featuredProducts[selectedItem.name].images.map((imgSrc, idx) => (
+                  <img
+                    key={idx}
+                    src={imgSrc}
+                    alt={`${selectedItem.name} ${idx + 1}`}
+                    className="w-full aspect-square rounded-xl object-cover"
+                    loading="lazy"
+                  />
+                ))}
+              </div>
             )}
             <p className="mt-4 text-sm leading-relaxed text-stone-600 italic">
               {featuredProducts[selectedItem.name]?.desc || selectedItem.desc || "Description bientôt disponible."}
