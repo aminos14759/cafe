@@ -63,9 +63,9 @@ const menuSections = [
       {
         name: "Trio Breakfast",
         items: [
-          { name: "Toast Avocat & oeufs + Bol Granula + Café", price: "22,900", popular: true },
+          { name: "Toast Avocat & oeufs + Bol Granula + Café", price: "22,900" },
           { name: "Croissant Salé + Café au choix + Mini Jus", price: "12,600" },
-          { name: "pain perdu miel + Café au choix + Mini Jus", price: "14,900" },
+          { name: "pain perdu miel + Café au choix + Mini Jus", price: "14,900",popular: true },
         ],
       },
       {
