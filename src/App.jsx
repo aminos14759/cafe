@@ -17,6 +17,7 @@ import miniBrunchImg from './assets/brunch .png'
 import omletteBrunchImg from './assets/bruch1personne items/omlettebrunch.png'
 import sucreeBrunchImg from './assets/bruch1personne items/sucreebrunch.png'
 import toastBrunchImg from './assets/bruch1personne items/toastbrunch.png'
+import crepefruitrouge from './assets/crepes/crepe fruit rouge.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -38,6 +39,9 @@ const featuredProducts = {
   "Mini brunch 1 personne ": {
     desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel",
     images: [miniBrunchImg, omletteBrunchImg,  sucreeBrunchImg, toastBrunchImg],
+  },
+  "Bueno Fruits Rouges" :{
+    images:[crepefruitrouge],
   },
 }
 
