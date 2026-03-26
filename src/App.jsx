@@ -53,13 +53,13 @@ const menuSections = [
         name: "Petit Déjeuner",
         items: [
           { name: "Quick Breakfast", desc: "Café au choix, mini jus, croissant, eau 0.5L", price: "8,700" },
-          { name: "Morning Classic", desc: "Café au choix, mini jus, croissant, omelette, fromage blanc & confiture", price: "11,900" },
+          { name: "Morning Classic", desc: "Café au choix, mini jus, croissant, omelette, fromage blanc & confiture", price: "11,900", popular: true },
         ],
       },
       {
         name: "Trio Breakfast",
         items: [
-          { name: "Toast Avocat & oeufs + Bol Granula + Café", price: "22,900" },
+          { name: "Toast Avocat & oeufs + Bol Granula + Café", price: "22,900", popular: true },
           { name: "Croissant Salé + Café au choix + Mini Jus", price: "12,600" },
           { name: "pain perdu miel + Café au choix + Mini Jus", price: "14,900" },
         ],
@@ -67,7 +67,7 @@ const menuSections = [
       {
         name: "Mini brunch 1 personne ",
         items: [
-          { name: "Mini brunch 1 personne ", desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel", price: "37,800" },
+          { name: "Mini brunch 1 personne ", desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel", price: "37,800", popular: true },
         ],
       },
       {
@@ -132,7 +132,7 @@ const menuSections = [
       {
         name: "Affogato",
         items: [
-          { name: "Pistache", price: "7,500" },
+          { name: "Pistache", price: "7,500", popular: true },
           { name: "Caramel", price: "7,100" },
           { name: "Tiramisu", price: "7,100" },
           { name: "Vanille", price: "7,100" },
@@ -152,7 +152,7 @@ const menuSections = [
           { name: "Spéculoos", price: "11,900" },
           { name: "Nutella", price: "12,600" },
           { name: "Caramel Spéculoos", price: "13,000" },
-          { name: "Nutella Spéculoos", price: "13,000" },
+          { name: "Nutella Spéculoos", price: "13,000", popular: true },
           { name: "Pistache", price: "12,600" },
         ],
       },
@@ -249,7 +249,7 @@ const menuSections = [
       {
         name: "Sandwiches",
         items: [
-          { name: "Crispy chicken", price: "14,200" },
+          { name: "Crispy chicken", price: "14,200", popular: true },
           { name: "Grillé chicken", price: "13,900" },
           { name: "Tunisien", price: "11,900" },
         ],
@@ -273,14 +273,14 @@ const menuSections = [
         items: [
           { name: "Nutella", price: "14,800" },
           { name: "Brownie Pocket", price: "15,600" },
-          { name: "Bueno Fruits Rouges", price: "16,800" },
+          { name: "Bueno Fruits Rouges", price: "16,800", popular: true },
         ],
       },
       {
         name: "Pancakes",
         items: [
           { name: "Nutella", price: "17,800" },
-          { name: "Pistache", price: "18,900" },
+          { name: "Pistache", price: "18,900", popular: true },
           { name: "Crunchy", price: "15,800" },
           { name: "Beurre de Cacahuète", price: "19,600" },
         ],
@@ -291,7 +291,7 @@ const menuSections = [
           { name: "Caramel Banane", price: "16,400" },
           { name: "Lemon Marshmallow", price: "17,200" },
           { name: "Tiramisu", price: "17,600" },
-          { name: "Pistache Fruits Rouges", price: "18,700" },
+          { name: "Pistache Fruits Rouges", price: "18,700", popular: true },
         ],
       },
       {
@@ -300,7 +300,7 @@ const menuSections = [
           { name: "Cheesecake au Choix", price: "12,500" },
           { name: "Tiramisu Classique", price: "13,800" },
           { name: "Tiramisu au Choix", price: "15,800" },
-          { name: "Saint Sébastien", price: "14,800" },
+          { name: "Saint Sébastien", price: "14,800", popular: true },
           { name: "Fondant Chocolat", price: "10,900" },
         ],
       },
@@ -324,7 +324,7 @@ const menuSections = [
         items: [
           { name: "Thon Fromage", price: "14,600" },
           { name: "Jambon Fromage", price: "13,800" },
-          { name: "Épinard Ricotta", price: "16,800" },
+          { name: "Épinard Ricotta", price: "16,800", popular: true },
           { name: "La Desseada", desc: "Thon & Jambon", price: "17,200" },
         ],
       },
@@ -339,7 +339,7 @@ const menuSections = [
       {
         name: "Healthy Corner",
         items: [
-          { name: "Rice Bowl", desc: "Riz aux fruits secs, salade, escalope grillé, œuf", price: "18,500" },
+          { name: "Rice Bowl", desc: "Riz aux fruits secs, salade, escalope grillé, œuf", price: "18,500", popular: true },
           { name: "Protéine Bowl", desc: "Saumon, avocat, salade, œuf, riz", price: "25,900" },
         ],
       },
@@ -347,7 +347,7 @@ const menuSections = [
         name: "Salades",
         items: [
           { name: "César", price: "16,900" },
-          { name: "Protéine", desc: "Quinoa, haricots rouges, œuf, salade verte", price: "22,400" },
+          { name: "Protéine", desc: "Quinoa, haricots rouges, œuf, salade verte", price: "22,400", popular: true },
           { name: "Healthy Avocado", desc: "Avocat, salade verte, graines de chia, fruits secs", price: "17,800" },
         ],
       },
@@ -355,7 +355,7 @@ const menuSections = [
         name: "Pâtes",
         items: [
           { name: "Putanesca", price: "15,900" },
-          { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200" },
+          { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200", popular: true },
           { name: "Pesto alla Genovese", price: "21,800" },
         ],
       },
@@ -392,7 +392,7 @@ function Divider() {
 }
 
 /* ═══════ Menu Item Row ═══════ */
-function MenuItem({ name, desc, price, onClick }) {
+function MenuItem({ name, desc, price, popular, onClick }) {
   return (
     <li className="group relative rounded-xl p-2 -mx-2 transition-all duration-300 hover:bg-amber-50 hover:shadow-sm">
       <button type="button" onClick={onClick} className="w-full cursor-pointer text-left outline-none">
@@ -408,20 +408,30 @@ function MenuItem({ name, desc, price, onClick }) {
           </span>
         </div>
         
-        <div className="mt-1 flex items-end justify-between gap-2">
+        <div className="mt-1 flex items-end justify-between gap-3">
           {desc ? (
             <p className="text-xs leading-relaxed text-stone-500 italic flex-1 pr-2 line-clamp-2">{desc}</p>
           ) : (
             <div className="flex-1"></div>
           )}
           
-          <div className="shrink-0 flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-widest text-stone-500 shadow-sm transition-all duration-300 group-hover:border-amber-300 group-hover:bg-amber-100 group-hover:text-amber-700">
-            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span className="hidden sm:inline-block">Voir détails</span>
-            <span className="sm:hidden">Détails</span>
+          <div className="shrink-0 flex flex-col items-end gap-1.5">
+            {popular && (
+              <span className="inline-flex items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-[0.6rem] font-bold uppercase tracking-wider text-amber-700 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                <svg className="h-3 w-3 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                Recommandé
+              </span>
+            )}
+            <div className="flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-widest text-stone-500 shadow-sm transition-all duration-300 group-hover:border-amber-300 group-hover:bg-amber-100 group-hover:text-amber-700">
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              <span className="hidden sm:inline-block">Voir détails</span>
+              <span className="sm:hidden">Détails</span>
+            </div>
           </div>
         </div>
       </button>
