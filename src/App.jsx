@@ -321,6 +321,7 @@ const menuSections = [
           { name: "Fromage", price: "11,800" },
           { name: "Thon Fromage", price: "14,600" },
           { name: "Jambon Fromage", price: "13,600" },
+          { name : "crépe fourrée", price :"18.800"},
         ],
       },
       {
