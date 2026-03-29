@@ -322,12 +322,21 @@ const menuSections = [
           { name: "Fromage", price: "11,800" },
           { name: "Thon Fromage", price: "14,600" },
           { name: "Jambon Fromage", price: "13,600" },
-          { name : "crépe fourrée", price :"18.800"},
+          
+        ],
+      },
+       {
+        name: "Nos Gratins",
+        items: [
+          { name: "crépe Fourée poulet champignons", price: "18.800" },
+          { name: "Lasagne bolognaise", price: "22.800" },
+         
         ],
       },
       {
         name: "Omelette",
         items: [
+          {name : "Frommage",price :"12.800"},
           { name: "Thon Fromage", price: "14,600" },
           { name: "Jambon Fromage", price: "13,800" },
           { name: "Épinard Ricotta", price: "16,800", popular: true },
@@ -363,6 +372,7 @@ const menuSections = [
           { name: "Putanesca", price: "15,900" },
           { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200", popular: true },
           { name: "Pesto alla Genovese", price: "21,800" },
+          { name : "Spaghetti bolognaise ", price:"23.600"}
         ],
       },
       {
