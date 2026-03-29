@@ -18,6 +18,7 @@ import omletteBrunchImg from './assets/bruch1personne items/omlettebrunch.png'
 import sucreeBrunchImg from './assets/bruch1personne items/sucreebrunch.png'
 import toastBrunchImg from './assets/bruch1personne items/toastbrunch.png'
 import crepefruitrouge from './assets/crepes/crepe fruit rouge.png'
+import Ricebowlimg from './assets/Healtycorner/rice.jpg'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -40,10 +41,12 @@ const featuredProducts = {
     desc: "Café, mini jus, croissant , omelette, fromage,charcuterie , tartine oeuf brouillé , tartine roquette tomate ,tartine Au fromage , harrisa,frommage blanc ,barquette, nuggets et boule fromage, crepe sucre, pain perdu miel fruit, bol granola, confiture,miel",
     images: [miniBrunchImg, omletteBrunchImg,  sucreeBrunchImg, toastBrunchImg],
   },
-  "Bueno Fruits Rouges" :{
+  "Brownie Pocket" :{
     images:[crepefruitrouge],
   },
-  
+  "Rice Bowl" : {
+    images : [Ricebowlimg]
+  },
 }
 
 /* ═══════════════════ MENU DATA ═══════════════════ */
