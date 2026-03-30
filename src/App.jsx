@@ -339,7 +339,7 @@ const menuSections = [
       {
         name: "Omelette",
         items: [
-          {name : "Frommage",price :"12.800"},
+          {name : "Fromage",price :"12.800"},
           { name: "Thon Fromage", price: "14,600" },
           { name: "Jambon Fromage", price: "13,800" },
           { name: "Épinard Ricotta", price: "16,800", popular: true },
