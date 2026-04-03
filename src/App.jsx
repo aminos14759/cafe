@@ -19,6 +19,8 @@ import sucreeBrunchImg from './assets/bruch1personne items/sucreebrunch.png'
 import toastBrunchImg from './assets/bruch1personne items/toastbrunch.png'
 import crepefruitrouge from './assets/crepes/crepe fruit rouge.png'
 import Ricebowlimg from './assets/Healtycorner/rice.jpg'
+import omelette from './assets/omelette/omelette.png'
+import crepo from './assets/crepes/crepo.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -47,6 +49,19 @@ const featuredProducts = {
   "Rice Bowl" : {
     images : [Ricebowlimg]
   },
+  "omelette  Fromage":{
+    images :[omelette]
+  },
+  "Crêpe Fromage":{
+    images :[crepo]
+  },
+  "Crêpe Thon Fromage" :{
+    images :[crepo]
+  },
+  "Crêpe Jambon Fromage" :{
+    images :[crepo]
+  }
+   
 }
 
 /* ═══════════════════ MENU DATA ═══════════════════ */
@@ -84,6 +99,154 @@ const menuSections = [
           { name: "Croissant", price: "2,400" },
           { name: "Pain au Chocolat", price: "2,400" },
           { name: "French Croissant", price: "8,800" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Sandwiches & Tacos",
+    subtitle: "Des sandwiches gourmands et généreux",
+    bannerImage: sandwichImg,
+    categories: [
+      {
+        name: "Sandwiches",
+        items: [
+          { name: "Crispy chicken", price: "14,200", popular: true },
+          { name: "Grillé chicken", price: "13,900" },
+          { name: "Tunisien", price: "11,900" },
+        ],
+      },
+      {
+        name: "Tacos",
+        items: [
+          { name: "Crispy", price: "15,600" },
+          { name: "Grillé", price: "14,800" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Salé & Plats",
+    subtitle: "Des saveurs qui régalent",
+    bannerImage: savoryImg,
+    categories: [
+      {
+        name: "Crêpe Salée",
+        items: [
+          { name: "Crêpe Fromage", price: "11,800" },
+          { name: "Crêpe Thon Fromage", price: "14,600" },
+          { name: "Crêpe Jambon Fromage", price: "13,600" },
+          
+        ],
+      },
+       {
+        name: "Nos Gratins",
+        items: [
+          { name: "crépe Fourée poulet champignons", price: "18.800" },
+          { name: "Lasagne bolognaise", price: "22.800" },
+         
+        ],
+      },
+      {
+        name: "Omelette",
+        items: [
+          {name : "omelette  Fromage",price :"12.800"},
+          { name: "omelette Thon Fromage", price: "14,600" },
+          { name: "omelette  Jambon Fromage", price: "13,800" },
+          { name: "omelette Épinard Ricotta", price: "16,800", popular: true },
+          { name: "omelette La Desseada", desc: "Thon & Jambon , riz , légumes sautés , frites ", price: "17,200" },
+        ],
+      },
+      {
+        name: "Toast",
+        items: [
+          { name: "Saumon oeufs", price: "16,400" },
+          { name: "Jambon Cheddar", price: "13,900" },
+          { name: "Avocat Saumon", price: "19,900" },
+        ],
+      },
+      {
+        name: "Healthy Corner",
+        items: [
+          { name: "Rice Bowl", desc: "Riz aux fruits secs, salade, escalope grillé, œuf", price: "18,500", popular: true },
+          { name: "Protéine Bowl", desc: "Saumon, avocat, salade, œuf, riz", price: "25,900" },
+        ],
+      },
+      {
+        name: "Salades",
+        items: [
+          { name: "César", price: "16,900" },
+          { name: "Protéine", desc: "Quinoa, haricots rouges, œuf, salade verte", price: "22,400", popular: true },
+          { name: "Healthy Avocado", desc: "Avocat, salade verte, graines de chia, fruits secs", price: "17,800" },
+        ],
+      },
+      {
+        name: "Pâtes",
+        items: [
+          { name: "Putanesca", price: "15,900" },
+          { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200", popular: true },
+          { name: "Pesto alla Genovese", price: "21,800" },
+          { name : "Spaghetti bolognaise ", price:"23.600"}
+        ],
+      },
+      {
+        name: "Plats",
+        items: [
+          { name: "Suprême Grillé", price: "19,200" },
+          { name: "Panné Sauce Fromage", price: "21,800" },
+          { name: "Blanc de Poulet Sauce Champignon", price: "23,400" },
+        ],
+      },
+      {
+        name: "Suppléments",
+        items: [
+          { name: "Frites", price: "5,000" },
+          { name: "Thon", price: "3,000" },
+          { name: "Jambon", price: "3,000" },
+          { name: "Fromage", price: "3,000" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Sucré & Gourmand",
+    subtitle: "Pour les âmes gourmandes",
+    bannerImage: sweetImg,
+    categories: [
+      {
+        name: "Crêpe Sucrée",
+        items: [
+          { name: "Nutella", price: "14,800" },
+          { name: "Brownie Pocket", price: "15,600" },
+          { name: "Bueno Fruits Rouges", price: "16,800", popular: true },
+        ],
+      },
+      {
+        name: "Pancakes",
+        items: [
+          { name: "Nutella", price: "17,800" },
+          { name: "Pistache", price: "18,900", popular: true },
+          { name: "Crunchy", price: "15,800" },
+          { name: "Beurre de Cacahuète", price: "19,600" },
+        ],
+      },
+      {
+        name: "Pain Perdu",
+        items: [
+          { name: "Caramel Banane", price: "16,400" },
+          { name: "Lemon Marshmallow", price: "17,200" },
+          { name: "Tiramisu", price: "17,600" },
+          { name: "Pistache Fruits Rouges", price: "18,700", popular: true },
+        ],
+      },
+      {
+        name: "Le Moment Sucré",
+        items: [
+          { name: "Cheesecake au Choix", price: "12,500" },
+          { name: "Tiramisu Classique", price: "13,800" },
+          { name: "Tiramisu au Choix", price: "15,800" },
+          { name: "Saint Sébastien", price: "14,800", popular: true },
+          { name: "Fondant Chocolat", price: "10,900" },
         ],
       },
     ],
@@ -245,154 +408,6 @@ const menuSections = [
           { name: "Citron aux Amandes", price: "11,500" },
           { name: "Duo Fraise Banane", price: "11,900" },
           { name: "Power", desc: "Dattes, Banane, fruits secs", price: "15,900" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Sandwiches & Tacos",
-    subtitle: "Des sandwiches gourmands et généreux",
-    bannerImage: sandwichImg,
-    categories: [
-      {
-        name: "Sandwiches",
-        items: [
-          { name: "Crispy chicken", price: "14,200", popular: true },
-          { name: "Grillé chicken", price: "13,900" },
-          { name: "Tunisien", price: "11,900" },
-        ],
-      },
-      {
-        name: "Tacos",
-        items: [
-          { name: "Crispy", price: "15,600" },
-          { name: "Grillé", price: "14,800" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Sucré & Gourmand",
-    subtitle: "Pour les âmes gourmandes",
-    bannerImage: sweetImg,
-    categories: [
-      {
-        name: "Crêpe Sucrée",
-        items: [
-          { name: "Nutella", price: "14,800" },
-          { name: "Brownie Pocket", price: "15,600" },
-          { name: "Bueno Fruits Rouges", price: "16,800", popular: true },
-        ],
-      },
-      {
-        name: "Pancakes",
-        items: [
-          { name: "Nutella", price: "17,800" },
-          { name: "Pistache", price: "18,900", popular: true },
-          { name: "Crunchy", price: "15,800" },
-          { name: "Beurre de Cacahuète", price: "19,600" },
-        ],
-      },
-      {
-        name: "Pain Perdu",
-        items: [
-          { name: "Caramel Banane", price: "16,400" },
-          { name: "Lemon Marshmallow", price: "17,200" },
-          { name: "Tiramisu", price: "17,600" },
-          { name: "Pistache Fruits Rouges", price: "18,700", popular: true },
-        ],
-      },
-      {
-        name: "Le Moment Sucré",
-        items: [
-          { name: "Cheesecake au Choix", price: "12,500" },
-          { name: "Tiramisu Classique", price: "13,800" },
-          { name: "Tiramisu au Choix", price: "15,800" },
-          { name: "Saint Sébastien", price: "14,800", popular: true },
-          { name: "Fondant Chocolat", price: "10,900" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Salé & Plats",
-    subtitle: "Des saveurs qui régalent",
-    bannerImage: savoryImg,
-    categories: [
-      {
-        name: "Crêpe Salée",
-        items: [
-          { name: "Fromage", price: "11,800" },
-          { name: "Thon Fromage", price: "14,600" },
-          { name: "Jambon Fromage", price: "13,600" },
-          
-        ],
-      },
-       {
-        name: "Nos Gratins",
-        items: [
-          { name: "crépe Fourée poulet champignons", price: "18.800" },
-          { name: "Lasagne bolognaise", price: "22.800" },
-         
-        ],
-      },
-      {
-        name: "Omelette",
-        items: [
-          {name : "Fromage",price :"12.800"},
-          { name: "Thon Fromage", price: "14,600" },
-          { name: "Jambon Fromage", price: "13,800" },
-          { name: "Épinard Ricotta", price: "16,800", popular: true },
-          { name: "La Desseada", desc: "Thon & Jambon , riz , légumes sautés , frites ", price: "17,200" },
-        ],
-      },
-      {
-        name: "Toast",
-        items: [
-          { name: "Saumon oeufs", price: "16,400" },
-          { name: "Jambon Cheddar", price: "13,900" },
-          { name: "Avocat Saumon", price: "19,900" },
-        ],
-      },
-      {
-        name: "Healthy Corner",
-        items: [
-          { name: "Rice Bowl", desc: "Riz aux fruits secs, salade, escalope grillé, œuf", price: "18,500", popular: true },
-          { name: "Protéine Bowl", desc: "Saumon, avocat, salade, œuf, riz", price: "25,900" },
-        ],
-      },
-      {
-        name: "Salades",
-        items: [
-          { name: "César", price: "16,900" },
-          { name: "Protéine", desc: "Quinoa, haricots rouges, œuf, salade verte", price: "22,400", popular: true },
-          { name: "Healthy Avocado", desc: "Avocat, salade verte, graines de chia, fruits secs", price: "17,800" },
-        ],
-      },
-      {
-        name: "Pâtes",
-        items: [
-          { name: "Putanesca", price: "15,900" },
-          { name: "Florentina", desc: "Blanche / Rosée / Rouge", price: "19,200", popular: true },
-          { name: "Pesto alla Genovese", price: "21,800" },
-          { name : "Spaghetti bolognaise ", price:"23.600"}
-        ],
-      },
-      {
-        name: "Plats",
-        items: [
-          { name: "Suprême Grillé", price: "19,200" },
-          { name: "Panné Sauce Fromage", price: "21,800" },
-          { name: "Blanc de Poulet Sauce Champignon", price: "23,400" },
-        ],
-      },
-      {
-        name: "Suppléments",
-        items: [
-          { name: "Frites", price: "5,000" },
-          { name: "Thon", price: "3,000" },
-          { name: "Jambon", price: "3,000" },
-          { name: "Fromage", price: "3,000" },
         ],
       },
     ],
