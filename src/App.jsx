@@ -21,6 +21,7 @@ import crepefruitrouge from './assets/crepes/crepe fruit rouge.png'
 import Ricebowlimg from './assets/Healtycorner/rice.jpg'
 import omelette from './assets/omelette/omelette.png'
 import crepo from './assets/crepes/crepo.png'
+import toastavocado from './assets/toast/toastavocdo.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -53,14 +54,21 @@ const featuredProducts = {
     images :[omelette]
   },
   "Crêpe Fromage":{
-    images :[crepo]
+    images :[crepo],
+    desc: "crepe  fromage , harissa , mayonnaise"
   },
   "Crêpe Thon Fromage" :{
-    images :[crepo]
+    images :[crepo],
+    desc: "crepe Thon fromage , harissa , mayonnaise"
   },
   "Crêpe Jambon Fromage" :{
-    images :[crepo]
-  }
+    images :[crepo],
+     desc: "crepe jambon fromage , harissa , mayonnaise"
+  },
+  "Avocat Saumon":{
+    images:[toastavocado],
+     desc: "Toast avocat avec saumon",
+  },
    
 }
 
