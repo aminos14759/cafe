@@ -22,6 +22,10 @@ import Ricebowlimg from './assets/Healtycorner/rice.jpg'
 import omelette from './assets/omelette/omelette.png'
 import crepo from './assets/crepes/crepo.png'
 import toastavocado from './assets/toast/toastavocdo.png'
+import toastjambonchedar from './assets/toast/toastjambon.png'
+import pesto from './assets/pattes/pesto.png'
+import crepenutella from './assets/crepes/crepenutella.png'
+import tiramisu from './assets/tiramissu/tiramisupistache.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -69,6 +73,23 @@ const featuredProducts = {
     images:[toastavocado],
      desc: "Toast avocat avec saumon",
   },
+  "Jambon Cheddar":{
+    images:[toastjambonchedar],
+    desc:"Jambon , Oeuf , Cheddar ",
+  },
+  "Pesto alla Genovese":{
+    images:[pesto],
+    desc:"pesto , escalope ",
+  },
+  "Nutella":{
+    images:[crepenutella],
+    desc:"Nutella "
+  },
+  "Tiramisu au Choix":{
+    images:[tiramisu],
+    desc:""
+  }
+
    
 }
 
@@ -144,6 +165,7 @@ const menuSections = [
           { name: "Crêpe Fromage", price: "11,800" },
           { name: "Crêpe Thon Fromage", price: "14,600" },
           { name: "Crêpe Jambon Fromage", price: "13,600" },
+          { name:"Crêpe Tunisienne " , price :"16.800"}
           
         ],
       },
@@ -212,6 +234,7 @@ const menuSections = [
           { name: "Thon", price: "3,000" },
           { name: "Jambon", price: "3,000" },
           { name: "Fromage", price: "3,000" },
+          { name : "Nestle" , price:"1.500" }
         ],
       },
     ],
@@ -410,6 +433,7 @@ const menuSections = [
         name: "Nos Jus",
         items: [
           { name: "Orange", price: "7,800" },
+           { name: "Fraise", price: "9,500" },
           { name: "Citron", price: "8,200" },
           { name: "Citron Menthe", price: "9,000" },
           { name: "Banane", price: "9,500" },
