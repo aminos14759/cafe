@@ -125,8 +125,8 @@ const menuSections = [
       {
         name: "Viennoiseries",
         items: [
-          { name: "Croissant", price: "2,400" },
-          { name: "Pain au Chocolat", price: "2,400" },
+          { name: "Croissant", price: "2,400", hideDetails: true },
+          { name: "Pain au Chocolat", price: "2,400", hideDetails: true },
           { name: "French Croissant", price: "8,800" },
         ],
       },
@@ -510,7 +510,7 @@ function MenuItem({ name, desc, price, popular, onClick, hideDetails }) {
 
 /* ═══════ Category Card ═══════ */
 function CategoryCard({ name, items, delay, sectionTitle, onItemClick }) {
-  const hideDetails = name === "Thés" || sectionTitle === "Nos Cafés" || name === "Cafés Classiques" || name === "Boissons Froides";
+  const hideDetails = name === "Thés" || sectionTitle === "Nos Cafés" || name === "Cafés Classiques" || name === "Boissons Froides" || name === "Suppléments" || name === "Nos Jus";
   return (
     <div
       className="animate-fade-in-up rounded-xl border border-stone-100 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-amber-100"
@@ -523,7 +523,7 @@ function CategoryCard({ name, items, delay, sectionTitle, onItemClick }) {
           <MenuItem
             key={i}
             {...item}
-            hideDetails={hideDetails}
+            hideDetails={hideDetails || item.hideDetails}
             onClick={() => onItemClick({ ...item, sectionTitle, categoryName: name })}
           />
         ))}
