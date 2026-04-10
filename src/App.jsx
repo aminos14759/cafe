@@ -250,6 +250,7 @@ const menuSections = [
           { name: "Nutella", price: "14,800" },
           { name: "Brownie Pocket", price: "15,600" },
           { name: "Bueno Fruits Rouges", price: "16,800", popular: true },
+          {name:"Crepe Delice Royale" , price:"17.800"},
         ],
       },
       {
