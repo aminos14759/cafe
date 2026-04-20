@@ -28,7 +28,7 @@ import crepenutella from './assets/crepes/crepenutella.png'
 import tiramisu from './assets/tiramissu/tiramisupistache.png'
 import painperdupistache from './assets/painperdu/pistache.png'
 import pancakepistache from './assets/pancakes/pistache.png'
-import frenchcroissant from './assets/croissant/frenchcroissant.png'
+import frenchcroissant from './assets/croissant/french.png'
 import tiramisunature from './assets/tiramissu/nature.png'
 import lotustiramissu from './assets/tiramissu/lotus.png'
 
