@@ -26,6 +26,11 @@ import toastjambonchedar from './assets/toast/toastjambon.png'
 import pesto from './assets/pattes/pesto.png'
 import crepenutella from './assets/crepes/crepenutella.png'
 import tiramisu from './assets/tiramissu/tiramisupistache.png'
+import painperdupistache from './assets/painperdu/pistache.png'
+import pancakepistache from './assets/pancakes/pistache.png'
+import frenchcroissant from './assets/croissant/frenchcroissant.png'
+import tiramisunature from './assets/tiramissu/nature.png'
+import lotustiramissu from './assets/tiramissu/lotus.png'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -86,9 +91,27 @@ const featuredProducts = {
     desc:"Nutella "
   },
   "Tiramisu au Choix":{
-    images:[tiramisu],
+    images:[tiramisu,lotustiramissu],
     desc:""
-  }
+  },
+  "Pistache Fruits Rouges":{
+    images:[painperdupistache],
+    desc:"pain perdu fruits rouges et pistache"
+  },
+  "Pancake Pistache":{
+    images:[pancakepistache],
+    desc:"nutella, pistache"
+  },
+  "French Croissant":{
+    images:[frenchcroissant],
+    desc:""
+  },
+  "Tiramisu Classique":{
+    images:[tiramisunature],
+    desc:"",
+  },
+    
+
 
    
 }
@@ -257,7 +280,7 @@ const menuSections = [
         name: "Pancakes",
         items: [
           { name: "Nutella", price: "17,800" },
-          { name: "Pistache", price: "18,900", popular: true },
+          { name: "Pancake Pistache", price: "18,900", popular: true },
           { name: "Crunchy", price: "15,800" },
           { name: "Beurre de Cacahuète", price: "19,600" },
         ],
