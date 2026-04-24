@@ -31,7 +31,6 @@ import pancakepistache from './assets/pancakes/pistache.png'
 import frenchcroissant from './assets/croissant/french.png'
 import tiramisunature from './assets/tiramissu/nature.png'
 import lotustiramissu from './assets/tiramissu/lotus.png'
-import afficheImg from './assets/affiche.jpeg'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -596,7 +595,6 @@ function SectionBanner({ title, subtitle, bannerImage, sectionIndex }) {
 
 function App() {
   const [selectedItem, setSelectedItem] = useState(null)
-  const [showAffiche, setShowAffiche] = useState(true)
 
   const scrollToMenu = () => {
     document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })
@@ -716,33 +714,6 @@ function App() {
             >
               Fermer
             </button>
-          </div>
-        </div>
-      )}
-
-      {showAffiche && (
-        <div
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 px-4"
-          onClick={() => setShowAffiche(false)}
-        >
-          <div
-            className="relative w-full max-w-md md:max-w-lg lg:max-w-xl max-h-[90vh] rounded-2xl flex flex-col items-center justify-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={() => setShowAffiche(false)}
-              className="absolute -right-2 -top-2 md:-right-4 md:-top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-stone-800 shadow-xl hover:bg-stone-100 transition-colors"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <img
-              src={afficheImg}
-              alt="Affiche"
-              className="w-full h-auto max-h-[85vh] object-contain rounded-2xl shadow-2xl"
-            />
           </div>
         </div>
       )}
