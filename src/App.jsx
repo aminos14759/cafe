@@ -31,6 +31,7 @@ import pancakepistache from './assets/pancakes/pistache.png'
 import frenchcroissant from './assets/croissant/french.png'
 import tiramisunature from './assets/tiramissu/nature.png'
 import lotustiramissu from './assets/tiramissu/lotus.png'
+import carokeImg from './assets/caroke.jpeg'
 
 const featuredProducts = {
   "Toast Avocat & Eggs + Bol Granola + Café": {
@@ -595,6 +596,7 @@ function SectionBanner({ title, subtitle, bannerImage, sectionIndex }) {
 
 function App() {
   const [selectedItem, setSelectedItem] = useState(null)
+  const [showKaraoke, setShowKaraoke] = useState(true)
 
   const scrollToMenu = () => {
     document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })
@@ -602,6 +604,35 @@ function App() {
 
   return (
     <div className="min-h-screen bg-stone-50">
+      {/* ═══════ KARAOKE POPUP ═══════ */}
+      {showKaraoke && (
+        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/90 p-4 backdrop-blur-md animate-fade-in">
+          <div className="relative max-w-2xl w-full animate-scale-in">
+            <button 
+              onClick={() => setShowKaraoke(false)}
+              className="absolute -top-12 right-0 z-10 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-colors backdrop-blur-md border border-white/20"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="relative">
+              <img 
+                src={carokeImg} 
+                alt="Karaoke Event" 
+                className="w-full h-auto max-h-[75vh] object-contain block rounded-2xl shadow-2xl"
+              />
+              <button 
+                onClick={() => setShowKaraoke(false)}
+                className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-8 rounded-full transition-all shadow-lg whitespace-nowrap"
+              >
+                Fermer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* ═══════ HERO ═══════ */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
         <img
